@@ -1,8 +1,8 @@
-# CinemaSorterJS
+# JS-Cinema-Sorter
 
 ## Overview
 
-CinemaSorterJS is a dynamic web application designed to demonstrate sorting algorithms with a fun twist—sorting new movie releases! This repository uses JavaScript, Ajax, DOM manipulation, and event handling to provide an interactive way to explore the bubble sort algorithm.
+JS-Cinema-Sorter is a dynamic web application designed to demonstrate sorting algorithms with a fun twist—sorting new movie releases! This repository uses JavaScript, Ajax, DOM manipulation, and event handling to provide an interactive way to explore the bubble sort algorithm.
 
 ## Features
 
@@ -21,8 +21,8 @@ You'll need a modern web browser that supports HTML5, CSS3, and JavaScript. No a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/shliamin/cinemasorterjs.git
-   cd cinemasorterjs
+   git clone https://github.com/shliamin/JS-Cinema-Sorter.git
+   cd JS-Cinema-Sorter
    ```
 2. Open the index.html file in your browser to start using the application.
 
