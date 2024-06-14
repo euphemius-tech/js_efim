@@ -28,7 +28,7 @@ body {
 #info {
     text-align: center;
     padding: 20px;
-    margin-bottom: 100px; 
+    margin-bottom: 30px;
 }
 
 #info a {
@@ -38,12 +38,12 @@ body {
 
 .buttons {
     text-align: center;
-    margin-bottom: 60px; 
+    margin-bottom: 30px;
 }
 
 button {
-    background-color: transparent; 
-    color: #333; /* Черный текст кнопок */
+    background-color: transparent;
+    color: #333;
     border: 1px solid #ccc;
     padding: 15px 32px;
     text-align: center;
@@ -56,7 +56,8 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover { 
+button:hover {
+    background-color: #f0f0f0;
     transform: translateY(-2px);
 }
 
@@ -78,7 +79,7 @@ button:active {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: #333;
+    color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -88,7 +89,7 @@ button:active {
 }
 
 .card-category:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 0 25px rgba(0,0,0,0.3);
 }
 
@@ -102,14 +103,15 @@ button:active {
 .card-category p {
     margin: 0;
     padding: 10px;
-    background: linear-gradient(90deg, #676d75, #EFF1F3); 
+    background: linear-gradient(90deg, #676d75, #EFF1F3);
     border-radius: 0 0 5px 5px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
     .cards {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .card-category {
