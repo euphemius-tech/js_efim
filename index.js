@@ -1,12 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Example data
-    const data = [
-        { name: "Apple", category: "Fruit" },
-        { name: "Carrot", category: "Vegetable" },
-        { name: "Banana", category: "Fruit" },
-        // Add more items here
-    ];
-
     // Function to perform Bubble Sort
     function bubbleSort(arr, key) {
         let len = arr.length;
@@ -29,17 +21,28 @@ document.addEventListener("DOMContentLoaded", function() {
         items.forEach(item => {
             const card = document.createElement('div');
             card.classList.add('card-category');
-            card.innerHTML = `<p>${item.name} - ${item.category}</p>`;
+            card.innerHTML = `<img src="${item.Poster}" alt="${item.Title}"><p>${item.Title} (${item.Year})</p>`;
             resultsContainer.appendChild(card);
         });
     }
 
-    // Function to search items
-    window.searchItems = function(event) {
+    // Function to search movies
+    window.searchMovies = function(event) {
         event.preventDefault();
         const searchTerm = document.getElementById('search-input').value.toLowerCase();
-        const filteredItems = data.filter(item => item.name.toLowerCase().includes(searchTerm));
-        const sortedItems = bubbleSort(filteredItems, 'name');
-        displayResults(sortedItems);
+        const apiKey = 'YOUR_OMDB_API_KEY'; // Replace with your OMDb API key
+        const url = `http://www.omdbapi.com/?s=${searchTerm}&apikey=${apiKey}`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (data.Response === "True") {
+                    const sortedItems = bubbleSort(data.Search, 'Title');
+                    displayResults(sortedItems);
+                } else {
+                    alert('No movies found!');
+                }
+            })
+            .catch(error => console.error('Error fetching data:', error));
     }
 });
