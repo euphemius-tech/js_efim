@@ -6,12 +6,19 @@ body {
     color: #333;
 }
 
-#header {
+#header h1 {
     text-align: center;
     padding: 20px;
     background-color: transparent;
-    color: #003366;
+    color: #333;
     border-radius: 20px;
+}
+
+#header h2 {
+    font-size: 0.5em;
+    color: #003366;
+    margin: 0;
+    padding: 0;
 }
 
 #info {
