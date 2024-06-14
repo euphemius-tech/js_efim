@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     let data = [];
 
-    // Function to load JSON data using AJAX
     function loadJSON(callback) {
         const xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
         xobj.send(null);
     }
 
-    // Function to perform Bubble Sort
     function bubbleSort(arr, key, order = 'asc') {
         let len = arr.length;
         for (let i = 0; i < len; i++) {
@@ -29,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return arr;
     }
 
-    // Function to display results
     function displayResults(items) {
         const resultsContainer = document.getElementById('results');
         resultsContainer.innerHTML = "";
@@ -41,13 +38,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Function to load data and display initially
     loadJSON(function(response) {
         data = response;
         displayResults(data);
     });
 
-    // Function to sort movies
     window.sortMovies = function(order) {
         const sortedItems = bubbleSort([...data], 'Year', order);
         displayResults(sortedItems);
