@@ -53,10 +53,13 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     overflow: hidden;
+    height: 300px; /* фиксированная высота карточки */
 }
 
 .card-category img {
     width: 100%;
+    height: 100%;
+    object-fit: cover; /* масштабирует изображение для заполнения контейнера */
     border-radius: 5px 5px 0 0;
 }
 
