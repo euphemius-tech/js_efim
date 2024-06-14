@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Пример данных для демонстрации
     const data = [
         { Title: "The Shawshank Redemption", Year: "1994", Poster: "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDI1LThmZTUtNWQyZmY3ZGUzMDNkXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg" },
         { Title: "The Godfather", Year: "1972", Poster: "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmYtYTAwMC00ZGE5LTg0MzUtYjRiNWM2YjNjZGQ3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" },
         { Title: "The Dark Knight", Year: "2008", Poster: "https://m.media-amazon.com/images/M/MV5BN2EyZjM3ZTctYTVlOC00ZjQxLWEzNjgtY2NjZWIyYjA2YTM4XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" },
-        // Добавьте больше фильмов для демонстрации
+        { Title: "Pulp Fiction", Year: "1994", Poster: "https://m.media-amazon.com/images/M/MV5BNGNhMDIzNmItYmU0ZC00ZTY1LWE5ODQtYzU5N2NhNTZhYTAxXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg" },
+        { Title: "Schindler's List", Year: "1993", Poster: "https://m.media-amazon.com/images/M/MV5BMWYwYjczZjItN2FkZS00Y2IzLWE5YjMtNzRmM2E2YzA0MjhkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg" },
+        { Title: "The Lord of the Rings: The Return of the King", Year: "2003", Poster: "https://m.media-amazon.com/images/M/MV5BYWZkNjRmNTgtN2E3MC00N2I2LTk5MTgtY2RmY2Q0Njg0NmE3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" },
+        { Title: "Fight Club", Year: "1999", Poster: "https://m.media-amazon.com/images/M/MV5BMmEzNzQxNmYtMWU2NC00YmFhLTkzMDgtM2Q3NDg3OTBiYmNlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg" },
+        { Title: "Forrest Gump", Year: "1994", Poster: "https://m.media-amazon.com/images/M/MV5BZmYxZDU0NmQtZjQwZC00YzI2LWFmMjktN2FkNGFmNzE3NjQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg" },
+        { Title: "Inception", Year: "2010", Poster: "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjYwNl5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg" }
     ];
 
     // Function to perform Bubble Sort
