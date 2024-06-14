@@ -11,9 +11,9 @@
         <h1>Star Wars Movies</h1>
     </div>
     <div id="info">
-        <p>This page demonstrates the use of AJAX to fetch data from a JSON file containing information about Star Wars movies. The data is then sorted using the Bubble Sort algorithm. For convenience, the JSON file was created with movie posters from <a href="http://www.omdbapi.com" target="_blank">OMDb API</a>. Using data from a JSON file with XMLHttpRequest or fetch is still considered a full-fledged use of AJAX, as AJAX by definition means asynchronous interaction with a server to fetch data without reloading the page. In this case, although the data is stored locally, we are using the same methods and approaches that are applied to fetch data from a remote server.
-
-However, to demonstrate a more typical use of AJAX with requests to a remote server, one can create and use a server-side part that returns data. But for educational purposes and examples, a local JSON file is quite suitable. The server-side part was not created for the sake of convenience.</p>
+        <p>This page demonstrates how to use AJAX (Asynchronous JavaScript and XML) to fetch data from a JSON file containing information about Star Wars movies. AJAX allows web pages to retrieve data from a server without reloading the entire page. The data is sorted using the Bubble Sort algorithm, which is chosen for its simplicity and ease of understanding. The JSON file includes movie posters from the <a href="http://www.omdbapi.com" target="_blank">OMDb API</a>.</p>
+        <p>Even though the data is stored locally, using XMLHttpRequest or fetch to access it still qualifies as a full use of AJAX. The methods used here are the same as those for retrieving data from a remote server.</p>
+        <p>To show a more typical use of AJAX with remote server requests, you could set up a server-side component to return data. However, for educational purposes, using a local JSON file is simpler and more convenient, so no server-side part was created.</p>
         <button onclick="sortMovies('asc')">Sort by Year (Asc)</button>
         <button onclick="sortMovies('desc')">Sort by Year (Desc)</button>
     </div>
