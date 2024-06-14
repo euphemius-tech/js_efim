@@ -28,7 +28,7 @@ body {
 #info {
     text-align: center;
     padding: 20px;
-    margin-bottom: 60px; 
+    margin-bottom: 100px; 
 }
 
 #info a {
@@ -38,13 +38,13 @@ body {
 
 .buttons {
     text-align: center;
-    margin-bottom: 40px; 
+    margin-bottom: 60px; 
 }
 
 button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
+    background-color: transparent; 
+    color: #333; /* Черный текст кнопок */
+    border: 1px solid #ccc;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -56,8 +56,7 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover {
-    background-color: #45a049;
+button:hover { 
     transform: translateY(-2px);
 }
 
@@ -85,6 +84,12 @@ button:active {
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     overflow: hidden;
     height: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-category:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
 }
 
 .card-category img {
