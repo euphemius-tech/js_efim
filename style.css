@@ -16,26 +16,31 @@ body {
 
 #header h2 {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em; /* Увеличиваем размер шрифта для Efim Shliamin */
     color: #003366;
     margin: 0;
     padding: 0;
 }
 
 h1 + h2 {
-    margin-top: 10px;
+    margin-top: 5px; /* Уменьшаем расстояние между h1 и h2 */
 }
 
 #info {
     text-align: center;
     text-decoration: none;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Увеличиваем расстояние между info и кнопками */
 }
 
 #info a {
     text-decoration: none;
     color: inherit; 
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 20px; /* Добавляем отступ между кнопками и секцией info */
 }
 
 button {
@@ -50,6 +55,7 @@ button {
     background-color: transparent;
     cursor: pointer;
     border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
@@ -96,7 +102,6 @@ button:active {
     border-radius: 0 0 5px 5px;
     text-align: center;
 }
-
 
 @media (max-width: 768px) {
     .cards {
