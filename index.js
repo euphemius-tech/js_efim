@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to load data and display initially
     loadJSON(function(response) {
-        data = response.Search;
+        data = response;
         displayResults(data);
     });
 
