@@ -38,7 +38,7 @@ body {
 }
 
 #info p {
-    margin-bottom: 30px; /* Применяем отступ к параграфу в #info */
+    margin-bottom: 30px; 
 }
 
 .buttons {
